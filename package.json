@@ -1,0 +1,29 @@
+{
+  "name": "proyecto-2c-crono",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "tsc -w",
+    "compodoc": "npx compodoc -p ./tsconfig.doc.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/npm-js-ts-angular-modules-course/proyecto-2c-crono.git"
+  },
+  "keywords": [],
+  "author": "Anartz Mugika Ledo <mugan86@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/npm-js-ts-angular-modules-course/proyecto-2c-crono/issues"
+  },
+  "homepage": "https://github.com/npm-js-ts-angular-modules-course/proyecto-2c-crono#readme",
+  "dependencies": {
+    "rxjs": "^6.4.0"
+  },
+  "devDependencies": {
+    "@compodoc/compodoc": "^1.1.8"
+  }
+}
