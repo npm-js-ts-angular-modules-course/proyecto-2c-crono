@@ -1,3 +1,4 @@
+import { Tiempo } from './constants';
 import { interval } from 'rxjs/internal/observable/interval';
 import { map } from 'rxjs/internal/operators/map';
 import { convertirSgAFormatoReloj } from './conversion';
@@ -19,8 +20,8 @@ export class Descontador {
     /**
      * Va descontando del valor inicial introducido hasta 0
      */
-    start() {
-        return interval(1000).pipe(
+    start(tiempoIntervalo: number = Tiempo.UN_SG_ES_EN_MS) {
+        return interval(tiempoIntervalo).pipe(
             map(
                 ( sg: number ) => {
                     return convertirSgAFormatoReloj(this.valorInicial - sg, 2, this.valorInicial)

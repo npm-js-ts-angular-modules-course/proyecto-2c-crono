@@ -1,4 +1,6 @@
 # Cronometro
+[![Build Status](https://travis-ci.org/npm-js-ts-angular-modules-course/proyecto-2c-crono.svg?branch=master)](https://travis-ci.org/npm-js-ts-angular-modules-course/proyecto-2c-crono)
+
 Un cronometro que cuenta y descuenta
 
 ## Instalación

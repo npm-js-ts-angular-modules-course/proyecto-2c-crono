@@ -13,5 +13,5 @@ export declare class Contador {
     /**
      * CUenta de 0 hasta el límite establecido
      */
-    start(): import("../../../../../../../../Volumes/DATA/Udemy/Proyects/NPM-Projects-Course/nodets/proyecto-2c-crono/node_modules/rxjs/internal/Observable").Observable<string>;
+    start(tiempoIntervalo?: number): import("rxjs/internal/Observable").Observable<string>;
 }

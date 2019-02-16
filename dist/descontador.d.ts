@@ -13,5 +13,5 @@ export declare class Descontador {
     /**
      * Va descontando del valor inicial introducido hasta 0
      */
-    start(): import("../../../../../../../../Volumes/DATA/Udemy/Proyects/NPM-Projects-Course/nodets/proyecto-2c-crono/node_modules/rxjs/internal/Observable").Observable<string>;
+    start(tiempoIntervalo?: number): import("rxjs/internal/Observable").Observable<string>;
 }
