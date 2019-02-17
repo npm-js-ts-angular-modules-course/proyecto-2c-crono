@@ -1,5 +1,7 @@
 # Cronometro
 [![Build Status](https://travis-ci.org/npm-js-ts-angular-modules-course/proyecto-2c-crono.svg?branch=master)](https://travis-ci.org/npm-js-ts-angular-modules-course/proyecto-2c-crono)
+[![npm version](https://badge.fury.io/js/proyecto-2c-crono.svg)](https://badge.fury.io/js/proyecto-2c-crono)
+[![Documentation](https://raw.githubusercontent.com/npm-js-ts-angular-modules-course/proyecto-2c-crono/master/documentation/images/coverage-badge-documentation.svg?sanitize=true)](https://github.com/npm-js-ts-angular-modules-course/proyecto-2c-crono)
 
 Un cronometro que cuenta y descuenta
 
