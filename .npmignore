@@ -4,3 +4,5 @@ node_modules/
 lib/
 documentation/
 tsconfig.doc.json
+coverage/
+documentation.txt
