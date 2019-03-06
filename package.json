@@ -8,6 +8,8 @@
     "test": "mocha",
     "watch": "tsc -w",
     "compodoc": "npx compodoc -p ./tsconfig.doc.json",
+    "firebase.deploy": "firebase deploy",
+    "publish.content": "npm run compodoc && npm run firebase.deploy",
     "cover": "istanbul cover node_modules/mocha/bin/_mocha test/*.js -- -R spec"
   },
   "repository": {

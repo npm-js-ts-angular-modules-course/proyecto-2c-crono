@@ -6,3 +6,5 @@ documentation/
 tsconfig.doc.json
 coverage/
 documentation.txt
+firebase.json
+.firebaserc

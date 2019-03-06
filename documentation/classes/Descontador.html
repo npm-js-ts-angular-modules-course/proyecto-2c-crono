@@ -124,14 +124,14 @@
                 </tr>
                 <tr>
                     <td class="col-md-4">
-<code>start()</code>
+<code>start(tiempoIntervalo: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
                     </td>
                 </tr>
 
 
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="22" class="link-to-prism">lib/descontador.ts:22</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="23" class="link-to-prism">lib/descontador.ts:23</a></div>
                             </td>
                         </tr>
 
@@ -142,9 +142,44 @@
 </div>
 
                             <div class="io-description">
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                                    <td>Default value</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>tiempoIntervalo</td>
+                                                        <td>
+                                                                    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                                        </td>
+                                                    
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                        <td>
+                                                                <code>Tiempo.UN_SG_ES_EN_MS</code>
+                                                        </td>
+
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                            <div>
+                            </div>
+                            <div class="io-description">
                                 <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
 
                             </div>
+                                <div class="io-description">
+                                    
+                                </div>
                     </td>
                 </tr>
             </tbody>
@@ -160,7 +195,8 @@
 
 
     <div class="tab-pane fade  tab-source-code" id="c-source">
-        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { interval } from &#x27;rxjs/internal/observable/interval&#x27;;
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Tiempo } from &#x27;./constants&#x27;;
+import { interval } from &#x27;rxjs/internal/observable/interval&#x27;;
 import { map } from &#x27;rxjs/internal/operators/map&#x27;;
 import { convertirSgAFormatoReloj } from &#x27;./conversion&#x27;;
 /**
@@ -181,8 +217,8 @@ export class Descontador {
     /**
      * Va descontando del valor inicial introducido hasta 0
      */
-    start() {
-        return interval(1000).pipe(
+    start(tiempoIntervalo: number &#x3D; Tiempo.UN_SG_ES_EN_MS) {
+        return interval(tiempoIntervalo).pipe(
             map(
                 ( sg: number ) &#x3D;&gt; {
                     return convertirSgAFormatoReloj(this.valorInicial - sg, 2, this.valorInicial)
